@@ -18,21 +18,20 @@
     "ws": "^8.18.1"
   },
   "main": "server.ts",
- "scripts": {
-  "dev": "ts-node-dev --respawn src/server.ts",  
-  "build": "tsc",                               
-  "start": "node dist/server.js"               
-},
-  
+  "scripts": {
+    "dev": "ts-node-dev --respawn src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js"
+  },
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
     "@types/body-parser": "^1.19.5",
-    "@types/cors": "^2.8.17",
+    "@types/cors": "^2.8.18",
     "@types/email-templates": "^10.0.4",
-    "@types/express": "^5.0.1",
+    "@types/express": "^5.0.2",
     "@types/jsonwebtoken": "^9.0.9",
     "@types/morgan": "^1.9.9",
-    "@types/node": "^22.14.1",
+    "@types/node": "^22.15.24",
     "@types/nodemailer": "^6.4.17",
     "@types/ws": "^8.18.1",
     "prisma": "^6.8.2",
