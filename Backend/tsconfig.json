@@ -1,17 +1,17 @@
 {
   "compilerOptions": {
-    "target": "ES2020",                     // Versão do JS para saída (pode usar ES2019, ES2020, ESNext)
-    "module": "CommonJS",                   // Módulos compatíveis com Node.js
-    "rootDir": "./src",                     // Pasta raiz do código fonte TS
-    "outDir": "./dist",                     // Pasta para o JS compilado
-    "strict": true,                        // Ativa várias checagens rigorosas de tipo
-    "esModuleInterop": true,               // Para permitir importação de módulos CommonJS via 'import'
-    "moduleResolution": "node",             // Resolve módulos pelo padrão Node.js
-    "resolveJsonModule": true,             // Permite importar arquivos JSON
-    "forceConsistentCasingInFileNames": true, // Evita problemas com nomes de arquivos
-    "skipLibCheck": true,                  // Ignora checagem dos tipos em node_modules (aumenta a velocidade)
-    "types": ["node"]                      // Inclui os tipos do Node.js (ex: process, __dirname)
+    "target": "ES2020",
+    "module": "CommonJS",
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "types": ["node"]
   },
-  "include": ["src"],                      // Inclui os arquivos TS dentro da pasta src
-  "exclude": ["node_modules", "dist"]     // Exclui node_modules e dist da compilação
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }
