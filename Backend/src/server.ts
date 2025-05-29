@@ -22,7 +22,7 @@ setupWebSocketServer(server);
 // Middlewares
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: process.env.CORS_ORIGIN || "*", // ← alterado aqui
     methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
@@ -40,5 +40,5 @@ app.get("/", (req, res) => {
 
 // Inicia o servidor Express + WebSocket
 server.listen(PORT, () => {
-  console.log(`🔥 Servidor rodando em http://localhost:${PORT}`);
+  console.log(`🔥 Servidor rodando na porta ${PORT}`); // ← alterado aqui
 });
