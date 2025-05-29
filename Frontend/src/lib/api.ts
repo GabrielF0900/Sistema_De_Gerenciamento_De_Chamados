@@ -6,7 +6,12 @@ export const api = axios.create({
   headers: {
     "Content-Type": "application/json",
   },
+  
 });
+    console.log(import.meta.env.VITE_API_URL)
+
+
+
 
 // Intercepta as requisições para adicionar o token de autenticação
 api.interceptors.request.use((config) => {
