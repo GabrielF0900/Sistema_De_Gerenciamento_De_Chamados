@@ -16,12 +16,12 @@
   },
   "main": "server.ts",
   "scripts": {
-    "dev": "npx --watch ts-node src/server.ts",
-    "start": "node dist/server.js",
-    "build": "tsc -p tsconfig.json",
-    "prisma:generate": "prisma generate",
-    "prisma:migrate": "prisma migrate deploy"
-  },
+  "build": "tsc -p tsconfig.prod.json && prisma generate",
+  "migrate": "prisma migrate deploy",
+  "start": "node dist/server.js",
+  "start:prod": "npm run build && npm run migrate && npm run start"
+},
+
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
     "@types/body-parser": "^1.19.5",
